@@ -1,0 +1,55 @@
+Pitch/Idea 
+
+I plan to create an e-commerse website to build the ultimate fictional fighting team. 
+A user will be able to log into my website, and be able to "shop" around for different cartoon
+cartoon, video game, cereal mascots, and anime characters and add them to their shopping cart.
+Each character will have different attacks and skills, so you want to have an eclectic group
+of fighters on your team.  They will be able to add these characters to their cart and check 
+out on another webpage.
+
+
+
+MVP
+
+-User will be able to log into an account
+-Users can scroll through fictional characters and add who they like to a cart for checkout
+-If a character is missing that the user wants, they can add it
+-User can favorite a single character
+ 
+
+
+Data Model
+
+-Database for storing user information...(First name, Last Name, Email, etc)
+-Database for storing characters(ManytoMany relations) 
+-Database for storing character information and stats(ManytoMany relations)
+-DataBase for what character a user favorited(OnetoOne relation)
+-DataBase for Characters added by user 
+-DataBase for Characters added into a users cart (OnetoMany) 
+
+
+
+Tables
+
+-Character Table
+-Character Stats Table
+-User table 
+-Favorites Table
+-Added Characters Table
+
+
+
+Relationships
+-One to Many (Characters in users cart)
+-Many to Many (Stats on Characters)
+-One to One(The users favorite Character)
+
+
+
+
+
+
+
+
+
+
